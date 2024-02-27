@@ -1,3 +1,11 @@
+:root{
+    --color-yellow:#ffcc4a;
+    --color-green:#4eaf4e;
+    --color-dark:rgba(27,27,27,0.91);
+    --color-gray:#ebebeb;
+    --color-white:#fff;
+    --color-black:#151515;
+}
 
 body{
 font-family: "Kode Mono", monospace;
@@ -14,13 +22,43 @@ margin: auto 0;
     background-color: gray;
     width: 1920px;
     height: 90px;
+    position: sticky;
 }
 .header__row{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    
 }
 .header__logo{
-    padding-top: 32px;
     width: 135px;
     height: 24px;
+    padding-top: 30px;
 } 
+.promo__list{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    list-style: none;
+    color: var(--color-white);
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+.list-1:hover{
+    color: var(--color-green);
+
+}
+.header__booking{
+    display: flex;
+    border-radius: 30px;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    padding: 7px,27px;
+    text-decoration: none;
+    width: 127px;
+    height: 38px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
